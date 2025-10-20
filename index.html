@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extensão TT</title>
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- ESTRUTURA DO PROGRAMA -->
+    <div class="container-pai">
+
+        <header class="cabecalho">
+        <img src="./icons/logo.png" alt="logo">
+        Transforme Textos
+        </header> <!-- Conteudo alunos -->
+
+        <input type="text" name="text" id="input-text" class="input-text" maxlength="500" placeholder="Digite seu texto aqui!" required>
+
+        <div class="container-button">
+
+            <button type="button" class="btn" id="btn-maiuscula">MAIÚSCULAS</button>
+            <button type="button" class="btn" id="btn-minuscula">minúsculas</button>
+
+        </div>
+
+        <div class="container-button">
+
+            <button type="button" class="btn" id="btn-primeira-letra">Letra</button>
+            <button type="button" class="btn" id="btn-limpar">Limpar</button>
+
+        </div>
+
+        <div class="container-button">
+
+            <button type="button" class="btn" id="btn-inverter">Inverter Palavras</button>
+
+        </div>
+
+        <textarea name="result" id="result" class="result"> </textarea>
+
+        <footer class="rodape">
+
+            <p>Para mais opções, visite:</p>
+            <a href="#">yurisantos.com.br</a>
+            
+        </footer>
+
+    </div>
+
+
+    <!-- lINK DO JAVASCRIT -->
+    <script src="script.js"></script>
+</body>
+</html>
