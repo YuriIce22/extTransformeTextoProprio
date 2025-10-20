@@ -1,0 +1,1 @@
+# extTransformeTextoProprio
