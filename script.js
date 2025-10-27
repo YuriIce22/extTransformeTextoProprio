@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function(){
     })
 
     document.querySelector("#btn-primeira-letra").addEventListener("click", function(){
-        let inputText = document.querySelector("#input-text").value
+        let inputText = document.querySelector("#input-text").value.toLowerCase()
         let inputTextFormatado = inputText.charAt(0).toUpperCase() + inputText.slice(1);
         document.querySelector("#result").innerHTML = inputTextFormatado
     })

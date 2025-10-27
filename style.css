@@ -17,8 +17,8 @@
 }
 
 .container-pai {
-  width: 325px;
-  height: 325px;
+  width: 335px;
+  height: 335px;
 
   /* Flexbox */
   display: flex;
@@ -38,26 +38,36 @@
    margin-top: 3px;
 
   /* FlexBox */
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn-principais{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .btn {
 
   border-radius: 5px;
-  cursor: pointer;
-  padding: 4px;
-  padding-left: 12px;
-  padding-right: 12px;
-  width: 120px; 
+    padding: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 120px; 
+    margin: 3px;
 
   color: white;
   background-color: rgb(165, 30, 30);
 }
 
 #btn-inverter {
-    width: 250px;
+    width: 245px;
+    margin-top: -1px;
 }
 
 .btn:hover {
@@ -82,11 +92,11 @@
 
 
 /* Resultado */
-.result {
-  margin-top: 4px;
-  resize: none;
-  width: 250px;
-  height: 80px;
+.result{
+    resize: none;
+    width: 245px;
+    height: 70px;
+    margin-bottom: 7px;
 }
 
 /* Rodapé */
