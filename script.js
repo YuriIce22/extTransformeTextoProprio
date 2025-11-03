@@ -13,7 +13,10 @@ document.addEventListener("DOMContentLoaded", function(){
 
     document.querySelector("#btn-primeira-letra").addEventListener("click", function(){
         let inputText = document.querySelector("#input-text").value.toLowerCase()
-        let inputTextFormatado = inputText.charAt(0).toUpperCase() + inputText.slice(1);
+        let inputTextFormatado = inputText.charAt(0).toUpperCase() + inputText.slice(1)
+        inputTextFormatado = inputTextFormatado.replace(/([.!?:;]\s*)([a-z])/g, function(match, espacos, letra){
+            return espacos + letra.toUpperCase()
+        })
         document.querySelector("#result").innerHTML = inputTextFormatado
     })
 
